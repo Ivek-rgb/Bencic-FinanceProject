@@ -89,7 +89,6 @@ public class AdministrativePanelController extends AccountControllers {
             }
         });
 
-
         operationalColumn.setCellFactory(new Callback<TableColumn<Account, Account>, TableCell<Account, Account>>() {
             @Override
             public TableCell<Account, Account> call(TableColumn<Account, Account> accountAccountTableColumn) {
@@ -189,8 +188,6 @@ public class AdministrativePanelController extends AccountControllers {
             }
         });
 
-
-
         refreshRecordedChanges.scheduleAtFixedRate(FileThreadFactory.refreshAndReadChanges(listOfRecordedChanges), 0, 5, TimeUnit.SECONDS);
         refreshAccountList.scheduleAtFixedRate(FileThreadFactory.refreshAccountTable(accountTableView), 0, 5, TimeUnit.SECONDS);
         refreshCategoryExpenditure.execute(DatabaseRunnableFactory.setTableViewForExpenditureCategory(expenditureCategoryTableView));
@@ -205,9 +202,10 @@ public class AdministrativePanelController extends AccountControllers {
 
             AccountUpdateChange<Account> accountUpdateChange = new AccountUpdateChange<>(currentLoginAccount, account);
 
-            Executor accountUpdateExecutor = Executors.newFixedThreadPool(2);
-            accountUpdateExecutor.execute(FileThreadFactory.promoteAccountToAdmin(account, accountTableView));
-            accountUpdateExecutor.execute(FileThreadFactory.serializeAccountChangeToFile(accountUpdateChange));
+            try(ExecutorService accountUpdateExecutor = Executors.newFixedThreadPool(2)){
+                accountUpdateExecutor.execute(FileThreadFactory.promoteAccountToAdmin(account, accountTableView));
+                accountUpdateExecutor.execute(FileThreadFactory.serializeAccountChangeToFile(accountUpdateChange));
+            }
 
         });
 
@@ -222,11 +220,12 @@ public class AdministrativePanelController extends AccountControllers {
             if(!FXUtils.createAndWaitConfirmation())
                 return;
 
-            Executor buttonThreadsExecutor = Executors.newFixedThreadPool(3);
+            try(ExecutorService buttonThreadsExecutor = Executors.newFixedThreadPool(3)){
+                buttonThreadsExecutor.execute(FileThreadFactory.deleteAccountAndSaveToFile(account, accountTableView));
+                buttonThreadsExecutor.execute(DatabaseRunnableFactory.deleteAllTracesOfAccount(account.getObjectID()));
+                buttonThreadsExecutor.execute(FileThreadFactory.serializeAccountChangeToFile(new AccountDeleteChange<>(currentLoginAccount, account)));
+            }
 
-            buttonThreadsExecutor.execute(FileThreadFactory.deleteAccountAndSaveToFile(account, accountTableView));
-            buttonThreadsExecutor.execute(DatabaseRunnableFactory.deleteAllTracesOfAccount(account.getObjectID()));
-            buttonThreadsExecutor.execute(FileThreadFactory.serializeAccountChangeToFile(new AccountDeleteChange<>(currentLoginAccount, account)));
         });
 
         return button;
@@ -243,9 +242,11 @@ public class AdministrativePanelController extends AccountControllers {
             if(!FXUtils.createAndWaitConfirmation())
                 return;
 
-            Executor buttonThreadsExecutor = Executors.newFixedThreadPool(2);
-            buttonThreadsExecutor.execute(DatabaseRunnableFactory.deleteAndRefreshExpenditureCategoryTableView(expenditureCategory, expenditureCategoryTableView));
-            buttonThreadsExecutor.execute(FileThreadFactory.serializeAccountChangeToFile(new AccountDeleteChange<>(currentLoginAccount, expenditureCategory)));
+
+            try(ExecutorService buttonThreadsExecutor = Executors.newFixedThreadPool(2)){
+                buttonThreadsExecutor.execute(DatabaseRunnableFactory.deleteAndRefreshExpenditureCategoryTableView(expenditureCategory, expenditureCategoryTableView));
+                buttonThreadsExecutor.execute(FileThreadFactory.serializeAccountChangeToFile(new AccountDeleteChange<>(currentLoginAccount, expenditureCategory)));
+            }
 
         });
 
@@ -264,10 +265,9 @@ public class AdministrativePanelController extends AccountControllers {
         ExpenditureCategory passToWriteCategory = new ExpenditureCategory.ExpenditureCategoryBuilder(categoryName.getText())
                                                                         .withRepresentativeColor(categoryColorPicker.getValue())
                                                                         .finishBuilding();
-
-        Executor addExpenditureCategoryExecutor = Executors.newFixedThreadPool(2);
-        addExpenditureCategoryExecutor.execute(DatabaseRunnableFactory.writeExpenditureCategoryAndRefreshTableView(passToWriteCategory, expenditureCategoryTableView, categoryName, currentLoginAccount));
-
+        try(ExecutorService addExpenditureCategoryExecutor = Executors.newFixedThreadPool(2)){
+            addExpenditureCategoryExecutor.execute(DatabaseRunnableFactory.writeExpenditureCategoryAndRefreshTableView(passToWriteCategory, expenditureCategoryTableView, categoryName, currentLoginAccount));
+        }
     }
 
     public void clear(){

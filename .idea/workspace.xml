@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0086ce4e-6424-4533-8ea9-34909fc7ef65" name="Changes" comment="Final changes and updates prior to audit." />
+    <list default="true" id="0086ce4e-6424-4533-8ea9-34909fc7ef65" name="Changes" comment="Final changes and updates prior to audit.">
+      <change afterPath="$PROJECT_DIR$/preconfig/finance-app.mv.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preconfig/finance-app.trace.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preconfig/info.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dat/accounts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat/changes.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dat/changes.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/application_runtime_logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application_runtime_logs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/hr/production/app/administrativepanel/AdministrativePanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/hr/production/app/administrativepanel/AdministrativePanelController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,24 +41,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ivek/IdeaProjects/Bencic-FinanceProject/src/main/resources/image-resources&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Ivek/IdeaProjects/Bencic-FinanceProject/preconfig",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ivek\IdeaProjects\Bencic-FinanceProject\preconfig" />
       <recent name="C:\Users\Ivek\IdeaProjects\Bencic-FinanceProject\src\main\resources\image-resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -98,7 +108,8 @@
       <workItem from="1706947198442" duration="1534000" />
       <workItem from="1706959471844" duration="616000" />
       <workItem from="1706964121558" duration="1111000" />
-      <workItem from="1707042911054" duration="1496000" />
+      <workItem from="1707042911054" duration="1854000" />
+      <workItem from="1707057697003" duration="1350000" />
     </task>
     <task id="LOCAL−00001" summary="*the beginnings">
       <option name="closed" value="true" />
@@ -114,7 +125,14 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1707045374971</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Final changes and updates prior to audit.">
+      <option name="closed" value="true" />
+      <created>1707045664576</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1707045664576</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

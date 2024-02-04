@@ -1,0 +1,6 @@
+2024-01-10 01:03:43.683000+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]TABLE ACCOUNT"; expected "identifier"; SQL statement:
+DELETE TABLE ACCOUNT [42001-224]
+2024-02-04 15:50:42.701000+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EXAMPLE_TABLE" not found; SQL statement:
+SELECT * FROM example_table [42102-224]

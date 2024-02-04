@@ -34,3 +34,5 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 2024-02-04 11:38:50,357 INFO [JavaFX Application Thread] Session logger [MenuBarController.java:149]  ACCOUNT: admin (admin)has logged out of Application
 2024-02-04 11:38:59,208 INFO [Thread-3] Session logger [FileThreadFactory.java:186]  ACCOUNT: admin has logged in
 2024-02-04 11:39:07,782 INFO [JavaFX Application Thread] Session logger [MenuBarController.java:149]  ACCOUNT: admin (admin)has logged out of Application
+2024-02-04 15:59:07,080 INFO [Thread-3] Session logger [FileThreadFactory.java:186]  ACCOUNT: admin has logged in
+2024-02-04 15:59:23,135 INFO [JavaFX Application Thread] Session logger [MenuBarController.java:149]  ACCOUNT: admin (admin)has logged out of Application

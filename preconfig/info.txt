@@ -1,0 +1,2 @@
+Put these database files into your user directory.
+App admin account: [Username: admin, password: admin]
