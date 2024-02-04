@@ -1,0 +1,26 @@
+#deleteButton{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+}
+
+#updateButton{
+    -fx-background-color: #22508c;
+    -fx-text-fill: white;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+}
+
+.button{
+    -fx-cursor: hand;
+}
+
+.text-field, .text-area{
+    -fx-background-color: white;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 5;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}

@@ -1,0 +1,20 @@
+.text-field{
+    -fx-background-color: white;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 5;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.datePickers{
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: none;
+    -fx-background-color: transparent;
+}
+
+.button{
+    -fx-cursor: hand;
+}

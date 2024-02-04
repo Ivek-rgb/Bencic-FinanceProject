@@ -1,0 +1,55 @@
+.tool-bar{
+    -fx-background-color: #22508c;
+    -fx-spacing: 30px;
+    -fx-cursor: hand;
+}
+
+#sliderButton{
+    -fx-cursor: hand;
+}
+
+
+
+.toolBarButton{
+    -fx-pref-width: 150px;
+    -fx-pref-height: 39px;
+    -fx-border-style: none;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-background-color: #22508c;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bolder;
+    -fx-font-family: Arial;
+    -fx-transition: background-color 1s;
+}
+
+.lastButton{
+    -fx-pref-height: 39px;
+    -fx-border-style: none;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-background-color: #22508c;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-transition: background-color 1s;
+}
+
+.toolBarButton:hover{
+    -fx-background-color: #2986ff;
+}
+
+.toolBarButton:pressed{
+    -fx-background-color: #2986ff;
+}
+
+
+#sliderButton{
+    -fx-background-radius: 0 0 15 0;
+}
+
+
+.tool-bar{
+    -fx-cursor: pointer;
+}

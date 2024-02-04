@@ -1,0 +1,3 @@
+EUR-(Euro)=1
+CAD-(Canadian Dollar)=0.68
+USD-(American Dollar)=0.92425

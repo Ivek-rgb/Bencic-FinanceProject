@@ -1,0 +1,8 @@
+#currencyComboBox{
+    -fx-font-weight: bolder;
+    -fx-font-family: Arial;
+}
+
+.button{
+    -fx-cursor: hand;
+}
