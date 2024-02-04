@@ -4,98 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0086ce4e-6424-4533-8ea9-34909fc7ef65" name="Changes" comment="*the beginnings">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dat/accounts.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dat/changes.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dat/currencyvals.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/application_runtime_logs.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/AccountControllers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/administrativepanel/AdministrativePanelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/dashboard/WelcomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/dialogcontrollers/AccountEditDialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/dialogcontrollers/ChangeDialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/dialogcontrollers/ExpenditureEditDialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/dialogcontrollers/IncomeEditDialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/export/ExportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/fxutils/FXUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/logincontrollers/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/logincontrollers/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/menubar/MenuBarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/settings/SettingsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/transactioncontrollers/ExpenditureController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/app/transactioncontrollers/IncomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/database/DatabaseUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/exceptions/checked/CurrencyNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/exceptions/checked/UnsuportedConversionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/exceptions/unchecked/ExpenditureCategoryDuplicateException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/exceptions/unchecked/TextFieldEmptyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/fileutils/AccountFileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/fileutils/CurrencyFileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/fileutils/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/fileutils/ObjectSerializationUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/logback/SessionLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/model/AccountAddChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/model/AccountDeleteChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/model/AccountUpdateChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/model/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/model/Change.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/model/CurrencyEntryRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/model/CurrencyMask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/model/Expenditure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/model/ExpenditureCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/model/IdentifiableObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/model/Income.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/model/NamedEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/model/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/threads/AccountFileOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/threads/CurrencyFileOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/threads/DatabaseRunnableFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/threads/DatabaseSynchronizedOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/threads/FileThreadFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/threads/FormattedFileOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/hr/production/threads/ObjectFileOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image-resources/1024px-Hamburger_icon_white.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image-resources/gear-admin-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image-resources/icons8-arrow-up-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image-resources/icons8-dashboard-90.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image-resources/icons8-edit-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image-resources/icons8-export-90.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image-resources/icons8-list-90.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image-resources/icons8-logout-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image-resources/icons8-money-90.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image-resources/icons8-settings-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image-resources/icons8-trash-can-120.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main/hr/production/app/admin-panel.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main/hr/production/app/custom-dialog-pane.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main/hr/production/app/expenditure-changer.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main/hr/production/app/expenditure-section.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main/hr/production/app/export-section.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main/hr/production/app/income-changer.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main/hr/production/app/income-section.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main/hr/production/app/login-page.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main/hr/production/app/menu-bar.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main/hr/production/app/register-screen.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main/hr/production/app/settings.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main/hr/production/app/welcome-screen.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/stylesheets/admin-panel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/stylesheets/dialog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/stylesheets/expenditure-section.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/stylesheets/login-screen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/stylesheets/menu-bar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/stylesheets/settings.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/stylesheets/welcome-screen.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/properties/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/properties/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/hr/production/app/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/hr/production/app/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/hr/production/app/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/hr/production/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/hr/production/model/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/main.hr.production.app/login-page.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
-    </list>
+    <list default="true" id="0086ce4e-6424-4533-8ea9-34909fc7ef65" name="Changes" comment="Final changes and updates prior to audit." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,7 +98,7 @@
       <workItem from="1706947198442" duration="1534000" />
       <workItem from="1706959471844" duration="616000" />
       <workItem from="1706964121558" duration="1111000" />
-      <workItem from="1707042911054" duration="1076000" />
+      <workItem from="1707042911054" duration="1496000" />
     </task>
     <task id="LOCAL−00001" summary="*the beginnings">
       <option name="closed" value="true" />
@@ -198,7 +107,14 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1704840453698</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Final changes and updates prior to audit.">
+      <option name="closed" value="true" />
+      <created>1707045374971</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1707045374971</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +133,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="*the beginnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="*the beginnings" />
+    <MESSAGE value="Final changes and updates prior to audit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Final changes and updates prior to audit." />
   </component>
 </project>
